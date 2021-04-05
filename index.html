@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+<meta charset="utf8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Sergiy Popravka">
+    <meta name="description" content="Portfolio page project for Freecodecamp">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+  </head>
+  <body onload="sizeAdjuster(), fontSizeAdjuster()">
+    <nav id="navbar">
+      <a href="#welcome-section">About</a>
+      <a href="#projectsContainer">Projects</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+      
+    <section id="welcome-section">
+      <img src="http://res.cloudinary.com/dmujv3o3b/image/upload/a_0/v1561374320/190624selfy.jpg">
+      <div id="about">
+      <div id="title">
+        <h1>Hi there, I'm Sergiy</h1>
+        </div>
+        <div id="pro" class="abouts">
+          <h3>My professional activity</h3>
+          <ul>
+            <li> IT </li>
+            <li> Finance </li>
+            <li> Banking </li>
+            <li> Sales </li>
+          </ul>
+        </div>
+        <div id="passion" class="abouts">
+          <h3>My passion</h3>
+          <ul>
+            <li>IT</li>
+            <li>Self-development</li>
+            <li>Sport</li>
+            <li>Art</li>
+          </ul>
+        </div>
+        <div id="aim" class="abouts">
+          <div id="aimText">
+            <h3>My aim - BECOME BETTER</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="projectsContainer">
+    <h2 id='projectsTitle'>My Projects</h2>
+    <section id="projects">
+        <div class="project-tile">
+            <a href="https://pt-testcase-next-git-main-srgivp-gmailcom.vercel.app/" target="_blank"><img class="prjct-img" src="screenshots/pt-testcase-next-scrn.png">
+                <figcaption>Pt-testcase-next</figcaption>
+            </a>
+        </div>
+        <div class="project-tile">
+            <a href="https://srgivp.github.io/pt-testcase/" target="_blank"><img class="prjct-img" src="screenshots/pt-testcase-scrn.png">
+                <figcaption>Pt-testcase</figcaption>
+            </a>
+        </div>
+      <div class="project-tile">
+        <a href="https://srgivp.github.io/running-shoes-tracker/" target="_blank"><img class="prjct-img" src="screenshots/runShoesTrackerScreenshot.png">
+      <figcaption>running shoes tracker</figcaption>
+        </a>
+      </div>
+      <div class="project-tile">
+        <a href="https://srgivp.github.io/mock-website/" target="_blank"><img class="prjct-img" src="screenshots/mockSiteScreenshot.png">
+      <figcaption>mock website</figcaption>
+        </a>
+      </div>
+      <div class="project-tile">
+        <a href="https://srgivp.github.io/pomodoro-clock/" target="_blank"><img class="prjct-img" src="screenshots/pomodoroScreenshot.png">
+      <figcaption>pomodoro clock</figcaption>
+        </a>
+      </div>
+    <div class="project-tile">
+      <a href="https://srgivp.github.io/JS-calculator/" target="_blank"><img class="prjct-img" src="screenshots/calculatorScreenshot.png">
+      <figcaption>JS calculator</figcaption>
+        </a>
+      </div>
+  <div class="project-tile">
+      <a href="https://srgivp.github.io/drum-machine/" target="_blank"><img class="prjct-img" src="screenshots/drumMachineScreenshoot.png">
+      <figcaption>drum machine</figcaption>
+        </a>
+      </div>
+      
+<!--  <div class="project-tile">-->
+<!--    <a href="https://srgivp.github.io/markup-previewer/" target="_blank"><img class="prjct-img" src="./screenshots/mrkdwnPreviewerScreenshot.png">-->
+<!--    <figcaption>markdown previewer</figcaption>-->
+<!--      </a>-->
+<!--    </div>-->
+<!--      <div class="project-tile">-->
+<!--        <a href="https://srgivp.github.io/quotes-generator" target="_blank"><img class="prjct-img" src="./screenshots/quotesGeneratorScreenshot.png">-->
+<!--        </img>-->
+<!--      <figcaption>quotes generator</figcaption>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--    -->
+<!--<div class="project-tile">-->
+<!--      <a href="https://codepen.io/PSergiiV/pen/YMdbvx" target="_blank"><img class="prjct-img" src="./screenshots/TechDocPageScreenshot.png">-->
+<!--        </img>-->
+<!--      <figcaption>technical documentation page</figcaption>-->
+<!--        </a>-->
+<!--      </div>-->
+<!--      -->
+<!--    <div class="project-tile">-->
+<!--        <a href="https://codepen.io/PSergiiV/pen/zXLpVw" target="_blank"><img class="prjct-img" src="./screenshots/landingPageScreenshot.png">-->
+<!--          </img>-->
+<!--        <figcaption>landing page</figcaption>-->
+<!--          </a>-->
+<!--        </div>-->
+<!--        <div class="project-tile">-->
+<!--          <a href="https://codepen.io/PSergiiV/pen/NJRrze" target="_blank"><img class="prjct-img" src="./screenshots/SurveyScreenshot.png">-->
+<!--            </img>-->
+<!--          <figcaption>survey form</figcaption>-->
+<!--            </a>-->
+<!--          </div>            -->
+    </section>
+    
+    <section id="contacts">
+        <a id="profile-link" href="https://www.freecodecamp.org/sergii" target="_blank"><img id='fcc-logo' src="screenshots/9892522.png" alt="fcc logo"></img></a>
+<a id='github-link' href="https://github.com/srgivp" target="_blank"><img id='github-logo' src="screenshots/GitHub-logo.png" alt="github logo"></img></a>
+      <p><span>&#9993</span>srgivp@gmail.com</p>
+    </section>
+    </div>
+<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>  
+</html>
