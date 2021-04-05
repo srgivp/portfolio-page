@@ -1,0 +1,245 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+#navbar {
+  float: right;
+  position: fixed;
+  top: 0;
+  right: 10px;
+  font-weight: bold;
+  z-index: 3;
+}
+a {
+  color: rgb(62, 45, 210);
+}
+
+#welcome-section {
+  /*display: flex;*/
+  /*flex-wrap: wrap;*/
+  height: 100vh;
+  max-width: 100vw;
+  background: url(https://res.cloudinary.com/dmujv3o3b/image/upload/v1561398514/Portfolio1pgBckgrnd.jpg)
+    center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+#welcome-section img {
+  width: auto;
+  height: 100vh;
+  float: left;
+}
+
+#welcome-section h1 {
+  margin-top: 7%;
+  text-align: center;
+  font-weight: bold;
+  color: #343a40;
+}
+#about {
+  display: grid;
+  grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: 100%;
+  height: 100vh;
+}
+#about ul {
+  list-style-type: none;
+}
+#title {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.abouts {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  padding: 3px;
+  background-color: grey;
+  border-radius: 15px;
+  z-index: 1;
+  height: 97%;
+  align-self: end;
+}
+.abouts h3 {
+  width: 100%;
+}
+
+.abouts::after {
+  opacity: 0.5;
+  z-index: -1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 15px;
+}
+#pro::after {
+  content: "";
+  background: url(https://res.cloudinary.com/dmujv3o3b/image/upload/v1561110483/PortfolioWorkPic.jpg)
+    center;
+}
+#passion::after {
+  content: "";
+  background: url(https://res.cloudinary.com/dmujv3o3b/image/upload/v1561110483/PortfolioHobbyPict.jpg)
+    center;
+}
+#aimText {
+  top: 50%;
+  position: absolute;
+  margin: 0;
+  transform: translateY(-50%);
+}
+
+#aim h3 {
+  margin-bottom: 0;
+}
+
+#aim::after {
+  content: "";
+  background: url(https://res.cloudinary.com/dmujv3o3b/image/upload/v1561110483/PortfolioAimPic.jpg)
+    center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 15px;
+}
+body {
+  background: url(https://res.cloudinary.com/dmujv3o3b/image/upload/v1561398514/Portfolio1pgBckgrnd.jpg) center no-repeat;
+  background-size: cover;
+}
+#projectsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  height: 100vh;
+  width: 100%;
+  align-items: stretch;
+  justify-content: center;
+  padding-top: 5%;
+}
+#projectsContainer h2 {
+  width: 100%;
+  height: fit-content;
+  text-align: center;
+  font-weight: bold;
+}
+#projects {
+  margin-top: 3%;
+  width: 98%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  /*grid-template-columns: 32% 32% 32%;*/
+  /*grid-gap: 5px;*/
+  max-width: 100vw;
+}
+
+.prjct-img {
+  width: 100%;
+  height: auto;
+}
+
+.project-tile {
+  /*border: solid navy;*/
+  text-align: center;
+  height: fit-content;
+  width: 32%;
+  margin-top: 1%;
+}
+
+.project-tile:hover {
+  border: solid rgb(101, 145, 196);
+}
+
+.project-tile figcaption {
+  padding: 0 1px 0 1px;
+  text-align: center;
+  background-color: grey;
+  color: rgb(255, 255, 255);
+}
+#contacts {
+  align-self: flex-end;
+}
+#contacts img {
+  width: 24px;
+  height: 24px;
+}
+#contacts img:hover {
+  background-color: rgb(101, 145, 196);
+}
+#contacts p {
+  display: inline;
+}
+#contacts span {
+  color: #343a40;
+}
+
+@media only screen and (max-width: 768px) {
+  #navbar {
+    font-size: .7rem;
+  }
+  #welcome-section, #about {
+    height: 50vh;
+  }
+  #about {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #pro,
+  #passion,
+  #aim {
+    height: 25%;
+    width: 100%;
+  }
+  #projectsContainer {
+    height: fit-content;
+  }
+  #welcome-section h1 {
+    font-size: 1.3rem;
+  }
+  body h2 {
+    font-size: 1.1rem;
+  }
+  #welcome-section h3 {
+    font-size: 1rem;
+  }
+  #welcome-section ul {
+    font-size: .7rem;
+    line-height: 1;
+  }
+  #welcome-section img {
+    display: none;
+  }
+  #about {
+    margin: 0;
+    width: 100%;
+  }
+  #contacts img {
+    width: 16px;
+    height: 16px;
+  }
+  .project-tile {
+    width: 90% !important;
+  }
+}
